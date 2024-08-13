@@ -1,0 +1,150 @@
+/* Estilos básicos para o layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFC0CB;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid #FFC0CB;
+    padding-bottom: 5px;
+}
+
+.atrações {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.atração {
+    width: calc(33.33% - 20px);
+    text-align: center;
+}
+
+.atração img {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.galeria img {
+    max-width: 100%;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    overflow: auto;
+}
+
+.modal-conteudo {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.fechar {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#mensagem-envio {
+    margin-top: 20px;
+}
+
+.button {
+    border: solid 1px #FFC0CB;
+    border-radius: 20px;
+    color: black;
+    background-color: #FFC0CB;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.accordion-btn {
+    background-color: #FFC0CB;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.panel {
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    padding: 0 18px;
+}
+.accordion-header {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.accordion-body {
+    font-size: 14px;
+    opacity: 0;
+    height: 0;
+}
+
+.accordion-body.active {
+    height: 100%;
+    opacity: 1;
+    padding: 5px; 0px;
+}

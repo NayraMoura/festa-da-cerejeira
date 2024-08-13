@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festa das Cerejeiras em Campos do Jordão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Festa das Cerejeiras</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#atracoes">Atrações</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>A Festa das Cerejeiras em Campos do Jordão é um evento anual que celebra a florada das cerejeiras na região.</p>
+        </section>
+
+        <section id="atracoes">
+            <h2>Atrações</h2>
+            <div class="atrações">
+                <div class="atração">
+                    <h3>Desfile de Cerejeiras</h3>
+                    <p>Um desfile incrível pelas ruas da cidade, com carros alegóricos decorados com flores de cerejeira.</p>
+                    <img src="cerejeiras_desfile.jpg" alt="Desfile de Cerejeiras">
+                </div>
+                <div class="atração">
+                    <h3>Concurso de Fotografia</h3>
+                    <p>Participe do concurso e capture as melhores imagens das cerejeiras em flor.</p>
+                    <img src="concurso_fotografia.jpg" alt="Concurso de Fotografia">
+                </div>
+                <div class="atração">
+                    <h3>Show de Música Japonesa</h3>
+                    <p>Apresentações ao vivo de músicos japoneses celebrando a cultura da cerejeira.</p>
+                    <img src="musica_japonesa.jpg" alt="Show de Música Japonesa">
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="galeria">
+                <img src="galeria_img1.jpg" alt="Imagem 1">
+                <img src="galeria_img2.jpg" alt="Imagem 2">
+                <img src="galeria_img3.jpg" alt="Imagem 3">
+                <img src="galeria_img4.jpg" alt="Imagem 4">
+            </div>
+            <div id="modal" class="modal">
+                <span class="fechar">&times;</span>
+                <img class="modal-conteudo" id="img-modal">
+            </div>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                
+                <a href="URL"><button class="button">Enviar</button></a>
+            </form>
+            <div id="mensagem-envio"></div>
+        </section>
+
+        <section id="faq">
+            <h2>FAQ</h2>
+            <div class="accordion-btn">
+            <div id="accordion-container">
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <span>
+                        O que é a Festa das Cerejeiras? 
+                        </span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                <div class="accordion-body">
+                    <p>
+                    A festa da cerejeira era um ritual para comemorar a colheita, anunciando a estação de plantação de arroz. Banquetes eram organizados sob as copas das cerejeiras, regados a saquê e outras iguarias típicas. Apesar de ser uma espécie de árvore nativa do Japão, a cerejeira é cultivada em vários países devido à sua beleza.
+                    </p>
+                </div>
+            </div>
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <span>
+                        Quando acontece o evento?
+                        </span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                <div class="accordion-body">
+                    <p>
+                    O evento ocorre geralmente na primavera, entre os meses de julho e agosto, quando as cerejeiras estão em plena florada.
+                    </p>
+                </div>
+            </div>
+                <div class="accordion">
+                    <button class="accordion-header">
+                        <span>
+                        Como posso participar do concurso de fotografia?
+                        </span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                <div class="accordion-body">
+                    <p>
+                    Para participar do concurso de fotografia, você precisa se inscrever através do formlário disponibilizado no site.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
